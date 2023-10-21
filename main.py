@@ -25,9 +25,9 @@ def hello():
 def echo(name):
     print(f"This was placed in the url: new-{name}")
     if(is_palindrome(name)):
-        print(f"The name of the route is a Palindrome")
+        print(f"The name of the route: {name} is a Palindrome")
     else:
-        print(f"The name of the route is not a Palindrome")
+        print(f"The name of the route: {name} is not a Palindrome")
     val = {"new-name": name}
     return jsonify(val)
 
